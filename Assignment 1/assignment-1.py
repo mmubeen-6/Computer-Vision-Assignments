@@ -1,6 +1,6 @@
 # Importing the necessary packages
 import cv2
-import numpy, scipy.sparse
+import numpy
 from numpy.linalg import inv
 from numpy.linalg import svd
 import time
@@ -159,18 +159,6 @@ if __name__== "__main__":
             break
 
     # Saved some points for usage of the two images
-    # For 0 and 1
-    # refPt = numpy.array([[[151, 165, 1], [89, 165, 1]],
-    #                      [[328, 280, 1], [269, 281, 1]],
-    #                      [[560, 227, 1], [495, 224, 1]],
-    #                      [[561, 102, 1], [496, 104, 1]]])
- 
-    # For 44 and 43
-    # refPt = numpy.array([[[225, 64, 1], [191, 62, 1]],
-    #                      [[189, 317, 1], [124, 321, 1]],
-    #                      [[326, 301, 1], [265, 302, 1]],
-    #                      [[614, 127, 1], [544, 129, 1]]])
-
     # For 44 and 45
     refPt = numpy.array([[[182, 267, 1], [119, 270, 1]],
                          [[264, 111, 1], [202, 110, 1]],
